@@ -39,7 +39,16 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
-
+/**
+ *
+ * File: MainActivity.java
+ * Version 1.0.0
+ * Date 18.02.2022
+ * Copyright (c) 2022 Sindre Andre Ditlefsen
+ * Website: https://ditlef.net
+ * License: http://opensource.org/licenses/gpl-license.php GNU Public License
+ *
+ */
 public class UserSignUpActivity extends AppCompatActivity {
 
     /* Api variables */
