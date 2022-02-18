@@ -1,5 +1,7 @@
-package net.frindex.caloriescounterandroidjava;
+/*
+*/
 
+package net.frindex.caloriescounterandroidjava;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
