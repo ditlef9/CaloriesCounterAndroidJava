@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".food_diary_goal.MyProfileHeightActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="18dp">
+
+
+
+        <!-- Height headline -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textViewHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/height"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack" />
+            <TextView
+                android:id="@+id/textViewHeadlineB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+        <!-- // Height headline -->
+
+        <!-- Height input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextHeightFeet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:paddingTop="12dp" />
+
+            <TextView
+                android:id="@+id/textViewHeightFeet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="12dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/feet_lowercase"
+                android:textColor="@color/colorBlack"/>
+
+            <EditText
+                android:id="@+id/editTextHeightInches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:paddingTop="12dp" />
+
+
+            <TextView
+                android:id="@+id/textViewHeightInches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="12dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/inches_lowercase"
+                android:textColor="@color/colorBlack"/>
+
+            <EditText
+                android:id="@+id/editTextHeightCm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:paddingTop="12dp" />
+            <TextView
+                android:id="@+id/textViewHeightCm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="12dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/cm_lowercase"
+                android:textColor="@color/colorBlack"/>
+        </LinearLayout>
+        <!-- //Height input -->
+
+
+        <!-- Next button and Switch measurement -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/btn_primary"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite" />
+        <Button
+            android:id="@+id/buttonSwitchMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_default"
+            android:text="@string/switch_to_feet_and_inches"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+        <!-- //Next button and Switch measurement -->
+
+    </LinearLayout>
+</ScrollView>

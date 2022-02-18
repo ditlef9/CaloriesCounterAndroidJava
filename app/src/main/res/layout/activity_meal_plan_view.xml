@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    tools:context=".meal_plans.MealPlanViewActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Images -->
+        <ImageView
+            android:id="@+id/imageViewMealPlan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_outline_done_black_24px" />
+        <!-- //Images -->
+
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textViewMealPlanTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:gravity="center_horizontal"
+            android:text="@string/meal_plans"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+        <!-- //Title -->
+
+        <!-- Introduction -->
+        <TextView
+            android:id="@+id/textViewMealPlanIntroduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center_horizontal"
+            android:text="@string/description"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic"
+            android:textColor="@color/colorDarkGray" />
+        <!-- //Introduction -->
+
+
+        <!-- Meals -->
+
+        <TableLayout
+            android:id="@+id/tableLayoutMeals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="24dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+        <!-- //Meals -->
+
+
+
+    </LinearLayout>
+</ScrollView>

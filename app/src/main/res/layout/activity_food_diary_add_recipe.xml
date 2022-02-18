@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    tools:context=".food_diary_add.FoodDiaryAddRecipeActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Focus -->
+        <View
+            android:id="@+id/focusThief"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <!-- Navigation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="18dp">
+
+            <TextView
+                android:id="@+id/textViewNavigationRecent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="@string/recent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray" />
+
+            <TextView
+                android:id="@+id/textViewNavigationFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="@string/food"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray" />
+
+            <TextView
+                android:id="@+id/textViewNavigationRecipes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recipes"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+        <!-- //Navigation -->
+
+        <!-- Search and scan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="18dp"
+            android:orientation="horizontal">
+
+            <!-- Search -->
+            <LinearLayout
+                android:id="@+id/linearLayoutHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/colorWhite"> <!-- Grey padding -->
+
+                <ImageView
+                    android:id="@+id/imageViewSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:srcCompat="@drawable/ic_outline_search_black_24px" />
+                <EditText
+                    android:id="@+id/editTextSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:paddingTop="12dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"  />
+
+
+            </LinearLayout>
+            <!-- //Search -->
+
+            <!-- Scan -->
+            <ImageView
+                android:id="@+id/imageViewScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="18dp"
+                app:srcCompat="@drawable/ic_outline_ettings_overscan_black_24px" />
+            <!-- //Scan -->
+
+        </LinearLayout>
+        <!-- //Search and scan -->
+
+        <!-- Previous button -->
+        <TextView
+            android:id="@+id/textViewMainPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="17dp"
+            android:text="@string/go_back"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+        <View
+            android:id="@+id/viewMainPrevious"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="11dp"
+            android:background="@color/colorGray"/>
+        <!-- //Previous button -->
+
+        <!-- View food -->
+        <LinearLayout
+            android:id="@+id/linearLayoutViewRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/textViewRecipeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/recipe"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textViewRecipeIntroduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/description"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorBlack" />
+
+
+            <!-- Add -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+
+                <EditText
+                    android:id="@+id/editTextRecipeServingSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:background="@drawable/edittext_standard"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="6dp"
+                    android:paddingLeft="6dp"
+                    android:ems="3"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/textViewGram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:padding="10dp"
+                    android:background="@drawable/btn_default_small"
+                    android:text="@string/g_lowercase"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorBlack" />
+
+
+                <TextView
+                    android:id="@+id/textViewPortion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:padding="10dp"
+                    android:background="@drawable/btn_default_small"
+                    android:text="@string/portion_lowercase"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorBlack" />
+
+
+            </LinearLayout>
+            <!-- //Add -->
+
+            <!-- Tables -->
+
+            <TextView
+                android:id="@+id/textViewRecipeTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/table"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack" />
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <!-- Table headcell -->
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/listViewHeadcellEmpty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/blank" />
+                    <TextView
+                        android:id="@+id/listViewHeadcellCalories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="@string/calories" />
+                    <TextView
+                        android:id="@+id/listViewHeadcellFat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="@string/fat" />
+                    <TextView
+                        android:id="@+id/listViewHeadcellCarb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="@string/carb" />
+                    <TextView
+                        android:id="@+id/listViewHeadcellProtein"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="@string/protein" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewHundred"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="right"
+                        android:text="@string/per_hundred_g_lowercase"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGray" />
+
+                    <TextView
+                        android:id="@+id/textViewHundredCalories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="2dp"
+                        android:text="1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGray" />
+
+                    <TextView
+                        android:id="@+id/textViewHundredFat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="2dp"
+                        android:text="2"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGray" />
+
+                    <TextView
+                        android:id="@+id/textViewHundredCarb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="2dp"
+                        android:text="3"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGray" />
+
+                    <TextView
+                        android:id="@+id/textViewHundredProtein"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="2dp"
+                        android:text="4"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGray" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewPiece"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/portion_lowercase"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGray" />
+                    <TextView
+                        android:id="@+id/textViewPieceCalories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="@string/calories" />
+                    <TextView
+                        android:id="@+id/textViewPieceFat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="@string/fat" />
+                    <TextView
+                        android:id="@+id/textViewPieceCarb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="@string/carb" />
+                    <TextView
+                        android:id="@+id/textViewPieceProtein"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="@string/protein" />
+                </TableRow>
+            </TableLayout>
+            <!-- //Tables -->
+
+
+            <!-- Images -->
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutImages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <ImageView
+                        android:id="@+id/imageViewRecipeImageA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_add_white_24px" />\
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <View
+                android:id="@+id/viewAddRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="11dp"
+                android:background="@color/colorGray"/>
+        </LinearLayout>
+        <!-- //View Recipe -->
+        <!-- Recipes -->
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp"
+            android:numColumns="2"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp" />
+        <!-- //Recipes -->
+
+    </LinearLayout>
+</ScrollView>

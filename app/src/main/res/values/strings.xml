@@ -1,3 +1,249 @@
 <resources>
     <string name="app_name">CaloriesCounterAndroidJava</string>
+
+    <!-- A B C D E F G H I J K L M N O P Q R S T U V W X Y Z -->
+
+    <!-- Forgot password -->
+    <string name="forgot_your_password_question_mark_no_problem">Forgot your password? No problem!</string>
+    <string name="ask_for_new_password">Ask for new password</string>
+    <!-- //Forgot password -->
+
+    <!-- Synchronize -->
+    <string name="get_slim_in_three_easy_steps">Get slim in three easy steps</string>
+    <string name="one_set_your_calories_goal">1 Set your calories goal</string>
+    <string name="two_find_a_meal_plan">2 Find a meal plan</string>
+    <string name="three_track_your_meals">3 Track your meals</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="now_fetching_your_previous_diary_entries">Now fetching your previous diary entries</string>
+    <string name="the_app_may_feel_slow_until_finished">The app may feel slow until finished</string>
+    <!-- //Synchronize -->
+
+    <!-- Food diary goal -->
+    <string name="cm_lowercase">cm</string>
+    <string name="switch_to_feet_and_inches">Switch to feet and inches</string>
+    <string name="switch_to_cm">Switch to cm</string>
+    <string name="feet_lowercase">feet</string>
+    <string name="inches_lowercase">inches</string>
+    <string name="how_tall_are_you">How tall are you?</string>
+    <string name="when_is_your_birthday">When is your birthday?</string>
+    <string name="what_is_your_current_weight">What is your current weight?</string>
+    <string name="kg_lowercase">kg</string>
+    <string name="lbs_lowercase">lbs</string>
+    <string name="switch_to_lbs">Switch to lbs</string>
+    <string name="switch_to_kg">Switch to kg</string>
+    <string name="what_is_your_target_weight">What is your target weight?</string>
+    <string name="choose_your_activity_level">Choose your activity level</string>
+    <string name="sedentary_dash_little_or_no_exercise">Sedentary - little or no exercise</string>
+    <string name="lightly_active_dash_exercise_sports_1_3_times_week">Lightly active - exercise sports 1-3 times per week</string>
+    <string name="moderately_active_dash_exercise_sports_3_5_times_week">Moderately active - exercise sports 3-5 times per week</string>
+    <string name="very_active_dash_hard_exercise_sports_6_7_times_week">Very active - hard exercise/sports 6-7 times per week</string>
+    <string name="extra_active_dash_very_hard_exercise_sports_or_physical_job">Extra active - very hard exercise/sports or physical</string>
+    <string name="summary">Summary</string>
+    <string name="from">From</string>
+    <string name="to_lowercase">to</string>
+
+    <string name="you_should_eat">You should eat</string>
+    <string name="calories_on_days_with_out_activity_to_keep_your_current_weight_lowercase">on days without activity to keep your current weight.</string>
+    <string name="with_activity_you_should_eat">With activity you should eat</string>
+    <string name="calories_dot_lowercase">calories.</string>
+    <string name="x">x</string>
+    <string name="calories_lowercase">calories</string>
+    <string name="finish">Finish</string>
+
+    <string name="current_weight">Your current weight</string>
+    <string name="current_bmi">Your current BMI</string>
+    <string name="target_weight">Your target weight</string>
+    <string name="target_bmi">Your target BMI</string>
+    <string name="this_is_what_you_can_eat_with_out_gaining_or_loosing_weight">This is what you can eat without gaining or losing weight</string>
+    <string name="bmr">BMR</string>
+    <string name="sedentary">Sedentary</string>
+    <string name="active">Active</string>
+    <string name="you_can_click_on_a_number_to_change_it">You can click on a number to change it</string>
+
+    <string name="this_is_what_you_can_eat_to_loose_weight">This is what you can eat to lose weight</string>
+    <string name="this_is_what_you_can_eat_to_gain_weight">This is what you can eat to gain weight</string>
+    <string name="save">Save</string>
+    <!-- //Food diary goal -->
+
+    <!-- Main Activity -->
+    <string name="goal_with_activity">Goal with activity</string>
+    <string name="food">Food</string>
+    <string name="sum">Sum</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="before_training">Before training</string>
+    <string name="after_training">After training</string>
+    <string name="dinner">Dinner</string>
+    <string name="snacks">Snacks</string>
+    <string name="supper">Supper</string>
+    <string name="calories">Calories</string>
+    <string name="lifestyle">Lifestyle</string>
+    <string name="goal">Goal</string>
+    <string name="remaining">Remaining</string>
+    <string name="sedentary_abbreviation">Sedentary</string>
+    <string name="remaining_abbreviation">Remaining</string>
+    <!-- //Main Activity -->
+
+    <!-- Main -->
+    <string name="menu">Menu</string>
+    <string name="calories_column">Calories:</string>
+    <string name="fat_column">Fat:</string>
+    <string name="carbs_column">Carbs:</string>
+    <string name="protein_column">Protein:</string>
+
+    <string name="zero_percentage">(0 %)</string>
+    <string name="fat_zero_percentage">Fat  (0 %)</string>
+    <string name="carbs_zero_percentage">Carbs  (0 %)</string>
+    <string name="protein_zero_percentage">Protein  (0 %)</string>
+    <!-- //Main -->
+
+
+    <!-- Meal plan -->
+    <string name="my_meal_plans">My meal plans</string>
+    <string name="new_meal_plan">New meal plan</string>
+    <!-- //Meal plan -->
+
+    <!-- Menu -->
+    <string name="my_profile">My profile</string>
+    <string name="my_goal">My goal</string>
+    <string name="synchronize">Synchronize</string>
+    <string name="visit_website">Visit website</string>
+    <string name="discuss_on">Discuss on</string>
+    <string name="close">Close</string>
+    <string name="meal_plans">Meal plans</string>
+    <!-- //Menu -->
+    <!-- My Profile -->
+    <string name="height">Height</string>
+    <!-- //My Profile -->
+
+    <!-- My goal -->
+    <string name="new_goal">New goal</string>
+    <string name="my_goals">My goals</string>
+    <string name="calories_with_sedentary_activity_lowercase">calories with sedentary activity</string>
+    <string name="calories_with_lowercase">calories with</string>
+    <string name="sedentary_activity_lowercase">sedentary activity</string>
+    <string name="lightly_activity_lowercase">lightly activity</string>
+    <string name="very_active_activity_lowercase">very active activity</string>
+    <string name="extra_active_activity_lowercase">extra active activity</string>
+    <string name="stay_at_the_same_weight">Stay at the same weight</string>
+    <string name="sedentary_activity">Sedentary activity</string>
+    <string name="lightly_activity">Lightly activity</string>
+    <string name="very_active">Very active</string>
+    <string name="extra_active">Extra active</string>
+    <string name="moderately_activity">Moderately activity</string>
+    <string name="lightly">Lightly</string>
+    <string name="moderately">Moderately</string>
+    <string name="carbs">Carbs</string>
+    <string name="lose_weight">Lose weight</string>
+    <string name="cal">Cal</string>
+    <!-- //My goal -->
+
+    <!-- Food diary add -->
+    <string name="recent">Recent</string>
+    <string name="recipes">Recipes</string>
+    <string name="kcal_lowercase">kcal</string>
+    <string name="per_hundred_g_lowercase">per 100 g</string>
+    <string name="per_hundred">Per 100</string>
+    <string name="fat">Fat</string>
+    <string name="carb">Carb</string>
+    <string name="protein">Protein</string>
+    <string name="amount">Amount</string>
+    <string name="g_lowercase">g</string>
+    <string name="pcs_lowercase">pcs</string>
+    <string name="table">Table</string>
+    <string name="description">Description</string>
+    <string name="portion_lowercase">portion</string>
+    <string name="recipe">Recipe</string>
+    <string name="Per_portion">Per portion</string>
+    <string name="portion">Portion</string>
+    <string name="new_food">New food</string>
+    <string name="new_recipe">New recipe</string>
+    <string name="my_food">My food</string>
+    <string name="my_recipes">My recipes</string>
+    <!-- //Food diary add -->
+
+    <!-- Food diary edit / delete -->
+    <string name="edit_delete">Edit/Delete</string>
+    <string name="delete">Delete</string>
+    <!-- Food diary edit / delete -->
+
+    <!-- Barcode -->
+    <string name="scan">Scan</string>
+    <!-- //Barcode -->
+
+    <!-- View recipe -->
+    <string name="directions">Directions</string>
+    <string name="kcal_total">Kcal total</string>
+    <string name="kcal_per_serving_lowercase">kcal per serving</string>
+    <string name="kcal_per_hundred_lowercase">kcal per 100</string>
+    <string name="servings_lowercase">servings</string>
+    <string name="per_hundred_lowercase">per 100</string>
+    <string name="by">By</string>
+    <string name="alias">Alias</string>
+    <string name="date">Date</string>
+    <string name="add_comment">Add comment</string>
+    <string name="title">Title</string>
+    <string name="set_rating">Set rating</string>
+    <string name="comment">Comment</string>
+    <string name="send">Send</string>
+    <!-- //View recipe -->
+
+
+    <!-- Setup -->
+    <string name="dash_space_please_select_language_space_dash">- Please select language -</string>
+    <string name="save_images_on_sdcard">Save images to SD card</string>
+    <string name="please_give_permissions_so_that_we_can_save_the_images_on_your_phone">Please give permissions so that we can save images on your phone.</string>
+    <string name="this_will_make_the_app_fast">This will make the app fast.</string>
+    <string name="ok">Ok</string>
+    <string name="new_or_existing_user">New or existing user?</string>
+    <string name="already_registered">Already registered?</string>
+    <string name="create_new_user">Create new user</string>
+    <string name="login">Login</string>
+    <string name="continue_">Continue</string>
+    <string name="welcome_to">Welcome to</string>
+    <!-- //Setup -->
+
+    <!-- User Log in -->
+    <string name="blank" translatable="false"> </string>
+    <string name="loading">Loading</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot_password_question_mark">Forgot password?</string>
+    <string name="next">Next</string>
+    <string name="go_back">Go back</string>
+    <string name="previous">Previous</string>
+    <string name="wanted_password">Wanted password</string>
+    <string name="new_user_sign_up">New user? Sign up!</string>
+    <string name="new_user_click_to_sign_up">New user? Click to sign up!</string>
+    <string name="already_registered_login">Already registered? Log in:</string>
+    <!-- //User Log in -->
+
+
+    <!-- User sign up -->
+    <string name="please_select_language_and_measurement_unit">Please select language and measurement unit</string>
+    <string name="language">Language</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+
+    <string name="what_is_your_email_address_question_mark">What is your email address?</string>
+    <string name="what_is_your_desired_alias_question_mark">What is your desired alias?</string>
+    <string name="proceed">Proceed</string>
+    <string name="moderately_activity_lowercase">moderate activity</string>
+    <!-- //User sign up -->
 </resources>

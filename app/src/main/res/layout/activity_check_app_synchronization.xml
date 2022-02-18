@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".synchronize_app.CheckAppSynchronizationActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/logo_color" />
+        <!-- //Logo -->
+
+        <!-- Headline -->
+        <TextView
+            android:id="@+id/textViewHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="@string/get_slim_in_three_easy_steps"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBlack" />
+        <!-- //Headline -->
+
+        <!--Steps-->
+
+        <TextView
+            android:id="@+id/textViewStepAText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="@string/one_set_your_calories_goal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/textViewStepBText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="@string/two_find_a_meal_plan"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+
+        <TextView
+            android:id="@+id/textViewStepCText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="@string/three_track_your_meals"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+
+        <!-- Steps -->
+
+
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/loading"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:textColor="@color/colorGray" />
+        <!-- //Status -->
+
+
+    </LinearLayout>
+</ScrollView>

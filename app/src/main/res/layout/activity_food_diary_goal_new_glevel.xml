@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".food_diary_goal.FoodDiaryGoalNewGActivityLevelActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="18dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logo_color" />
+        <!-- //Logo -->
+
+        <!-- Headline -->
+        <TextView
+            android:id="@+id/textViewHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="18dp"
+            android:text="@string/choose_your_activity_level"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorDarkGray" />
+        <!-- //Headline -->
+
+        <!-- New Goal form -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="18dp"
+            android:background="@color/colorLightGray">
+
+
+
+            <!-- Dob -->
+            <LinearLayout
+                android:id="@+id/linearLayoutActivityLevel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="18dp"
+                android:background="@color/colorWhite"> <!-- Grey padding -->
+
+
+                <TextView
+                    android:id="@+id/textViewActivityLevelA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="24dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/sedentary_dash_little_or_no_exercise"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:id="@+id/textViewActivityLevelB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="24dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/lightly_active_dash_exercise_sports_1_3_times_week"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:id="@+id/textViewActivityLevelC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="24dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/moderately_active_dash_exercise_sports_3_5_times_week"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:id="@+id/textViewActivityLevelD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="24dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/very_active_dash_hard_exercise_sports_6_7_times_week"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:id="@+id/textViewActivityLevelE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="24dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/extra_active_dash_very_hard_exercise_sports_or_physical_job"/>
+            </LinearLayout>
+            <!-- //Dob -->
+
+
+        </LinearLayout>
+        <!-- //New Goal form -->
+
+    </LinearLayout>
+</ScrollView>

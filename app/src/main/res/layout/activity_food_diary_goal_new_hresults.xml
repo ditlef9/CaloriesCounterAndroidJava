@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".food_diary_goal.FoodDiaryGoalNewHResultsActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="18dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logo_color" />
+        <!-- //Logo -->
+
+        <!-- Headline -->
+        <TextView
+            android:id="@+id/textViewHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="18dp"
+            android:text="@string/summary"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorDarkGray" />
+        <!-- //Headline -->
+
+        <!-- Summary -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="18dp"
+            android:background="@color/colorLightGray">
+
+
+            <!-- Summary A -->
+            <LinearLayout
+                android:id="@+id/linearLayoutSummaryA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginLeft="18dp"
+                android:background="@color/colorWhite"> <!-- Grey padding -->
+
+                <ImageView
+                    android:id="@+id/imageViewSummaryA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="18dp"
+                    app:srcCompat="@drawable/ic_outline_done_black_24px" />
+
+                <TextView
+                    android:id="@+id/textViewSummaryAText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="@string/from"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorDarkGray" />
+
+                <EditText
+                    android:id="@+id/editTextSummaryAText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:ems="4" />
+
+                <Button
+                    android:id="@+id/buttonSummaryAText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/btn_primary"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+            <!-- //Summary A -->
+
+            <!-- Summary B -->
+            <LinearLayout
+                android:id="@+id/linearLayoutSummaryB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginLeft="18dp"
+                android:background="@color/colorWhite"> <!-- Grey padding -->
+
+                <ImageView
+                    android:id="@+id/imageViewSummaryB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="18dp"
+                    app:srcCompat="@drawable/ic_outline_done_black_24px" />
+
+                <TextView
+                    android:id="@+id/textViewSummaryBText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorDarkGray"
+                    android:text="@string/from"/>
+
+                <EditText
+                    android:id="@+id/editTextSummaryBText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:ems="4" />
+
+                <Button
+                    android:id="@+id/buttonSummaryBText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/btn_primary"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+            <!-- //Summary B -->
+
+            <!-- Summary C -->
+            <LinearLayout
+                android:id="@+id/linearLayoutSummaryC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginLeft="18dp"
+                android:background="@color/colorWhite"> <!-- Grey padding -->
+
+                <ImageView
+                    android:id="@+id/imageViewSummaryC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="18dp"
+                    app:srcCompat="@drawable/ic_outline_done_black_24px" />
+
+                <TextView
+                    android:id="@+id/textViewSummaryCText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorDarkGray"
+                    android:text="@string/from"/>
+
+                <EditText
+                    android:id="@+id/editTextSummaryCText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:ems="4" />
+
+                <Button
+                    android:id="@+id/buttonSummaryCText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/btn_primary"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+            <!-- //Summary C -->
+
+            <!-- Summary D -->
+            <LinearLayout
+                android:id="@+id/linearLayoutSummaryD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginLeft="18dp"
+                android:background="@color/colorWhite"> <!-- Grey padding -->
+
+                <ImageView
+                    android:id="@+id/imageViewSummaryD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="18dp"
+                    app:srcCompat="@drawable/ic_outline_done_black_24px" />
+
+                <TextView
+                    android:id="@+id/textViewSummaryDText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorDarkGray"
+                    android:text="@string/from"/>
+
+                <EditText
+                    android:id="@+id/editTextSummaryDText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:ems="4" />
+
+                <Button
+                    android:id="@+id/buttonSummaryDText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/btn_primary"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+            <!-- //Summary D -->
+
+
+            <!-- Next button -->
+
+            <LinearLayout
+                android:id="@+id/linearLayoutButtons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="18dp"> <!-- Grey padding -->
+                <Button
+                    android:id="@+id/buttonPrevious"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/btn_primary"
+                    android:text="@string/previous"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/buttonNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/btn_primary"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/buttonFinish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_primary"
+                    android:text="@string/finish"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+            <!-- //Next button -->
+
+        </LinearLayout>
+        <!-- //Summary -->
+
+    </LinearLayout>
+</ScrollView>

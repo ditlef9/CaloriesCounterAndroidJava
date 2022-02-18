@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="7dp"
+    android:fadingEdgeLength="0dp"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/textViewFromTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorDarkGray"
+        android:text="From x to y" />
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightBlankHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/blank" />
+
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightCaloriesHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:text="@string/cal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray" />
+
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightFatHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:text="@string/fat"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray" />
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightCarbsHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/carbs" />
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightProteinHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/protein" />
+        </TableRow>
+
+
+        <!-- Same weight -->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:text="@string/stay_at_the_same_weight"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightBMRHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightBMRCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightBMRCarbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightBMRFat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightBMRProtein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightSedentaryHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/sedentary" />
+
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightSedentaryCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightSedentaryCarbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightSedentaryFat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightSedentaryProtein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightActiveHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/active" />
+
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightActiveCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightActiveCarbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightActiveFat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+            <TextView
+                android:id="@+id/textViewStayTheSameWeightActiveProtein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+        </TableRow>
+        <!-- //Same weight -->
+
+        <!-- Down -->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewLoseWeightHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:layout_marginTop="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/lose_weight" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewLoseWeightBMRHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+            <TextView
+                android:id="@+id/textViewLoseWeightBMRCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+            <TextView
+                android:id="@+id/textViewLoseWeightBMRCarbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+            <TextView
+                android:id="@+id/textViewLoseWeightBMRFat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+            <TextView
+                android:id="@+id/textViewLoseWeightBMRProtein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewLoseWeightSedentaryHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/sedentary" />
+
+            <TextView
+                android:id="@+id/textViewLoseWeightSedentaryCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+            <TextView
+                android:id="@+id/textViewLoseWeightSedentaryCarbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+            <TextView
+                android:id="@+id/textViewLoseWeightSedentaryFat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+            <TextView
+                android:id="@+id/textViewLoseWeightSedentaryProtein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewLoseWeightActiveHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/active" />
+
+            <TextView
+                android:id="@+id/textViewLoseWeightActiveCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+            <TextView
+                android:id="@+id/textViewLoseWeightActiveCarbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+
+            <TextView
+                android:id="@+id/textViewLoseWeightActiveFat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+            <TextView
+                android:id="@+id/textViewLoseWeightActiveProtein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorDarkGray"
+                android:text="@string/bmr" />
+        </TableRow>
+    </TableLayout>
+    <!-- //Same weight -->
+
+</LinearLayout>

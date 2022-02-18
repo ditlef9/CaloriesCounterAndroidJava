@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.frindex.caloriescounterandroidjava">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +13,114 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CaloriesCounterAndroidJava">
+        <activity
+            android:name=".synchronize_user_data.CheckUserSynchronizationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".synchronize_app.CheckAppSynchronizationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".setup.SetupCPermissionsCheckerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".setup.SetupBPermissionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".setup.SetupASelectLanguageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recipes.RecipesCViewRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recipes.RecipesBShowRecipesInMainCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recipes.RecipesAMainCategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recipes.CommentWriteNewToRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".meal_plans.MealPlanViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".meal_plans.MealPlansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_goal.MyProfileHeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_goal.MyProfileGenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_goal.MyProfileDobActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_goal.MyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_goal.MyGoalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_goal.FoodDiaryGoalNewHResultsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_goal.FoodDiaryGoalNewGActivityLevelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_goal.FoodDiaryGoalNewFTargetWeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_goal.FoodDiaryGoalNewECurrentWeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_goal.FoodDiaryGoalNewCDobActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_goal.FoodDiaryGoalNewBGenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_goal.FoodDiaryGoalNewAHeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_edit_delete.FoodDiaryEntriesEditDeleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food.FoodDViewFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_add.FoodDiaryAddRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_add.FoodDiaryAddRecentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_add.FoodDiaryAddFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_diary_add.FoodDiaryAddBarcodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food.FoodCFoodInSubCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food.FoodBSubCategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food.FoodAMainCategoriesActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

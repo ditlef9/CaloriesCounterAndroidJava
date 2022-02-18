@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".food_diary_goal.FoodDiaryGoalNewBGenderActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="18dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logo_color" />
+        <!-- //Logo -->
+
+        <!-- Headline -->
+        <TextView
+            android:id="@+id/textViewHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="18dp"
+            android:text="@string/gender"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorDarkGray" />
+        <!-- //Headline -->
+
+        <!-- New Goal form -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorLightGray">
+
+            <!-- Gender -->
+            <LinearLayout
+                android:id="@+id/linearLayoutGender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="18dp"
+                android:background="@color/colorWhite"> <!-- Grey padding -->
+                <ImageView
+                    android:id="@+id/imageViewGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="18dp"
+                    app:srcCompat="@drawable/ic_wc_black_24px" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroupInpGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:paddingTop="12dp">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonInpA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/male"
+                        android:layout_marginRight="5dp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButtonInpB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female" />
+                </RadioGroup>
+
+            </LinearLayout>
+            <!-- //Gender -->
+
+
+
+            <!-- Next button and Switch measurement -->
+            <LinearLayout
+                android:id="@+id/linearLayoutButtons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="18dp"> <!-- Grey padding -->
+                <Button
+                    android:id="@+id/buttonNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/btn_primary"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+            <!-- //Next button and Switch measurement -->
+
+
+        </LinearLayout>
+        <!-- //New Goal form -->
+
+        <!-- Dynamic text -->
+        <TextView
+            android:id="@+id/textViewDynamicText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank" />
+        <!-- //Dynamic text -->
+    </LinearLayout>
+</ScrollView>

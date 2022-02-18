@@ -1,5 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_check_app_synchronization.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_check_user_synchronization.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_comment_write_new_to_recipe.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_amain_categories.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_bsub_categories.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_cfood_in_sub_category.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_add_barcode.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_add_food.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_add_food_adapter.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_add_food_main_categories_adapter.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_add_food_sub_categories_adapter.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_add_recent.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_add_recipe.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_entries_edit_delete.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_goal_new_aheight.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_goal_new_bgender.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_goal_new_cdob.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_goal_new_ecurrent_weight.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_goal_new_ftarget_weight.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_goal_new_glevel.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_diary_goal_new_hresults.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_food_dview_food.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_meal_plan_view.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_meal_plans.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_meal_plans_adapter.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_menu.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_menu_list_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_my_goals.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_my_goals_list_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_my_profile.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_my_profile_dob.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_my_profile_gender.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_my_profile_height.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_recipes_amain_categories.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_recipes_bshow_recipes_in_main_category.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_recipes_cview_recipe.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_recipes_view_comments.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_setup_aselect_language.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_setup_bpermissions.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_setup_cpermissions_checker.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_user_forgot_password.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_user_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/activity_user_sign_up.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/CaloriesCounterAndroidJava/app/src/main/res/layout/simple_list_item_medium_white.xml" value="0.22826086956521738" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".user.UserLoginActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/logo_color" />
+        <!-- //Logo -->
+
+
+
+        <!-- Login form -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorLightGray">
+
+            <TableLayout
+                android:id="@+id/tableLayoutLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <!-- Email -->
+                <TableRow
+                    android:id="@id/tableRowEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="6dp"
+                    android:paddingLeft="12dp"
+                    android:background="@color/colorWhite"> <!-- Grey padding -->
+
+                    <ImageView
+                        android:id="@+id/imageViewEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginTop="12dp"
+                        app:srcCompat="@drawable/ic_email_black_24px" />
+
+                    <EditText
+                        android:id="@+id/editTextEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:paddingTop="12dp"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:text="@string/blank" />
+                </TableRow>
+                <!-- // Email -->
+
+                <!-- Password -->
+                <TableRow
+                    android:id="@+id/tableRowPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="6dp"
+                    android:paddingLeft="12dp"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/imageViewPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginTop="12dp"
+                        app:srcCompat="@drawable/ic_lock_black_24px" />
+
+                    <EditText
+                        android:id="@+id/editTextPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:paddingTop="12dp"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:inputType="textWebPassword" />
+
+                </TableRow>
+                <!-- //Password -->
+
+                <!-- Login button -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="12dp">
+
+                    <Button
+                        android:id="@+id/buttonLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:background="@drawable/btn_primary"
+                        android:text="@string/login"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorWhite" />
+
+                </TableRow>
+                <!-- //Login button -->
+
+                <!-- Forgot password -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="8dp">
+
+
+                    <TextView
+                        android:id="@+id/textViewForgotPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:layout_gravity="center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/forgot_password_question_mark" />
+                </TableRow>
+                <!-- //Forgot password -->
+
+            </TableLayout>
+        </LinearLayout>
+        <!-- //Login form -->
+
+        <!-- New user -->
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="12dp"
+            android:text="@string/new_user_click_to_sign_up" />
+        <!-- //New user -->
+
+
+        <!-- Dynamic text -->
+        <TextView
+            android:id="@+id/textViewDynamicText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/blank" />
+        <!-- //Dynamic text -->
+
+    </LinearLayout>
+</ScrollView>

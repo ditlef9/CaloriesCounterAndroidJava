@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".synchronize_user_data.CheckUserSynchronizationActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <!-- Welcome back -->
+        <TextView
+            android:id="@+id/textViewWelcomeBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="@string/welcome_back"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBlack" />
+        <ImageView
+            android:id="@+id/imageViewUserImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_person_black_24px" />
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/welcome_back"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBlack" />
+        <!-- //Welcome back -->
+
+
+        <!-- Continue -->
+
+        <TextView
+            android:id="@+id/textViewNowFetching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:text="@string/now_fetching_your_previous_diary_entries"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+        <TextView
+            android:id="@+id/textViewSlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:text="@string/the_app_may_feel_slow_until_finished"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/btn_primary"
+            android:text="@string/continue_"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite" />
+        <!-- //Continue -->
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/loading"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorDarkGray" />
+        <!-- //Status -->
+    </LinearLayout>
+</ScrollView>

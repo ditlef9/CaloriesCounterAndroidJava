@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".user.UserSignUpActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="18dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logo_color" />
+        <!-- //Logo -->
+
+        <!-- Headline -->
+        <TextView
+            android:id="@+id/textViewHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorDarkGray"
+            android:layout_marginBottom="18dp"
+            android:text="@string/new_user_sign_up" />
+        <!-- //Headline -->
+
+        <!-- Signup Form -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorLightGray">
+
+
+            <TableLayout
+                android:id="@+id/tableLayoutLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <!-- Language -->
+                <TableRow
+                    android:id="@+id/tableRowLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="6dp"
+                    android:paddingLeft="12dp"
+                    android:background="@color/colorWhite"> <!-- Grey padding -->
+
+                    <ImageView
+                        android:id="@+id/imageViewLanguage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="12dp"
+                        app:srcCompat="@drawable/ic_flag_black_24dp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerLanguage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12dp" />
+                </TableRow>
+                <!-- // Language -->
+
+                <!-- Measurement -->
+                <TableRow
+                    android:id="@+id/tableRowMeasurement"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="6dp"
+                    android:paddingLeft="12dp"
+                    android:background="@color/colorWhite"> <!-- Grey padding -->
+
+                    <ImageView
+                        android:id="@+id/imageViewMeasurement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="12dp"
+                        app:srcCompat="@drawable/ic_kitchen_black_24px" />
+
+                    <Spinner
+                        android:id="@+id/spinnerMeasurement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12dp" />
+                </TableRow>
+                <!-- //Measurement -->
+
+
+                <!-- Email -->
+                <TableRow
+                    android:id="@+id/tableRowEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="6dp"
+                    android:paddingLeft="12dp"
+                    android:background="@color/colorWhite"> <!-- Grey padding -->
+
+                    <ImageView
+                        android:id="@+id/imageViewEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="12dp"
+                        app:srcCompat="@drawable/ic_mail_outline_black_24dp" />
+
+                    <EditText
+                        android:id="@+id/editTextEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:text="@string/blank" />
+                </TableRow>
+                <!-- // Email -->
+
+                <!-- UserName -->
+                <TableRow
+                    android:id="@+id/tableRowUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="6dp"
+                    android:paddingLeft="12dp"
+                    android:background="@color/colorWhite"> <!-- Grey padding -->
+
+                    <ImageView
+                        android:id="@+id/imageViewUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="12dp"
+                        app:srcCompat="@drawable/ic_person_black_24px" />
+
+                    <EditText
+                        android:id="@+id/editTextUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:paddingTop="12dp"
+                        android:ems="10"
+                        android:inputType=""
+                        android:text="@string/blank" />
+                </TableRow>
+                <!-- //UserName -->
+
+                <!-- Password -->
+                <TableRow
+                    android:id="@+id/tableRowPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="6dp"
+                    android:paddingLeft="12dp"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/imageViewPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="12dp"
+                        app:srcCompat="@drawable/ic_lock_outline_black_24dp" />
+
+                    <EditText
+                        android:id="@+id/editTextPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12dp"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:inputType="textWebPassword" />
+
+                </TableRow>
+                <!-- //Password -->
+
+                <!-- DOB -->
+
+                <TableRow
+                    android:id="@+id/tableRowDOBDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="6dp"
+                    android:paddingLeft="12dp"
+                    android:background="@color/colorWhite"> <!-- Grey padding -->
+
+                    <TextView
+                        android:id="@+id/textViewDOBDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="12dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/day"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerDOBDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowDOBMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="6dp"
+                    android:paddingLeft="12dp"
+                    android:background="@color/colorWhite"> <!-- Grey padding -->
+
+                    <TextView
+                        android:id="@+id/textViewDOBMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="12dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/month"/>
+
+
+                    <Spinner
+                        android:id="@+id/spinnerDOBMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp" />
+
+
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRowDOBYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="6dp"
+                    android:paddingLeft="12dp"
+                    android:background="@color/colorWhite"> <!-- Grey padding -->
+
+                    <TextView
+                        android:id="@+id/textViewDOBYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="12dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/year"/>
+
+
+                    <Spinner
+                        android:id="@+id/spinnerDOBYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp" />
+
+                </TableRow>
+                <!-- //DOB -->
+
+                <!-- Gender -->
+                <TableRow
+                    android:id="@+id/tableRowGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="6dp"
+                    android:paddingLeft="12dp"
+                    android:background="@color/colorWhite"> <!-- Grey padding -->
+
+                    <ImageView
+                        android:id="@+id/imageViewGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="12dp"
+                        app:srcCompat="@drawable/ic_wc_black_24px" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupInpGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:paddingTop="12dp">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonInpA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/male"
+                            android:layout_marginRight="5dp"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonInpB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/female" />
+                    </RadioGroup>
+
+                </TableRow>
+                <!-- //Gender -->
+
+
+                <!-- Next button -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp">
+
+                    <Button
+                        android:id="@+id/buttonNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:background="@drawable/btn_primary"
+                        android:text="@string/next"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorWhite" />
+
+                </TableRow>
+                <!-- //Next button -->
+
+
+            </TableLayout>
+        </LinearLayout>
+        <!-- //Sign up form -->
+
+        <!-- Dynamic text -->
+        <TextView
+            android:id="@+id/textViewDynamicText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank" />
+        <!-- //Dynamic text -->
+    </LinearLayout>
+</ScrollView>
